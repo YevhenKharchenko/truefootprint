@@ -1,58 +1,64 @@
-.gameplay-section {
+.variety-section {
   @include media(desktop) {
   }
 }
 
-.gameplay-bg-wrapper {
+.variety-bg-wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/variety/variety-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 351px right;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/variety/variety-bg-desk.png);
+    background-position: top 9px right 515px;
   }
 }
 
-.gameplay-container {
+.variety-container {
   @include media(desktop) {
   }
 }
 
-.gameplay-content-wrapper {
+.variety-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
 }
 
-.gameplay-text-wrapper {
+.variety-text-wrapper {
   @include media(desktop) {
     max-width: 544px;
     margin-top: 80px;
   }
 }
 
-.gameplay-title {
+.variety-title {
   @include media(desktop) {
   }
 }
 
-.gameplay-subtitle {
+.variety-subtitle {
   @include media(desktop) {
   }
 }
 
-.gameplay-text {
+.variety-text {
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -64,7 +70,7 @@
   }
 }
 
-.gameplay-top-text {
+.variety-top-text {
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -72,7 +78,7 @@
   }
 }
 
-.gameplay-list {
+.variety-list {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -83,7 +89,7 @@
   }
 }
 
-.gameplay-list-item {
+.variety-list-item {
   padding-left: 7px;
   display: flex;
   align-items: center;
@@ -93,7 +99,7 @@
   }
 }
 
-.gameplay-item-circle {
+.variety-item-circle {
   background: #20ff00;
   border-radius: 100%;
   min-width: 10px;
@@ -104,7 +110,7 @@
   }
 }
 
-.gameplay-item-text {
+.variety-item-text {
   font-family: 'Urbanist', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -116,12 +122,12 @@
   }
 }
 
-.gameplay-bottom-text {
+.variety-bottom-text {
   @include media(desktop) {
   }
 }
 
-.gameplay-img {
+.variety-img {
   @include media(desktop) {
     min-width: 448px;
   }

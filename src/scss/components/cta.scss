@@ -4,21 +4,21 @@
 }
 
 .cta-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/cta/cta-bg-mob.jpg);
+  background-image: url(../img/cta/cta-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: top 35px center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/cta/cta-bg-desk.jpg);
+    background-image: url(../img/cta/cta-bg-desk.png);
   }
 }
 
@@ -27,78 +27,48 @@
   }
 }
 
-.cta-title {
-  margin-bottom: 40px;
-
-  @include media(desktop) {
-  }
-}
-
 .cta-content-wrapper {
   @include media(desktop) {
-    display: flex;
-    align-items: start;
-    gap: 150px;
   }
 }
 
 .cta-text-wrapper {
-  margin-bottom: 40px;
+  @include media(desktop) {
+  }
+}
+
+.cta-title {
+  text-align: center;
 
   @include media(desktop) {
-    width: 100%;
-    max-width: max-content;
-    margin-bottom: 0;
   }
 }
 
 .cta-subtitle {
-  margin-bottom: 24px;
+  text-align: center;
 
   @include media(desktop) {
   }
 }
 
-.cta-top-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+.cta-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.5;
-  color: #8023aa;
-  margin-bottom: 40px;
+  text-align: center;
+  color: #0f227b;
+  margin-bottom: 32px;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 48px;
   }
 }
 
 .cta-btn {
   @include media(desktop) {
-    margin-left: 0;
-  }
-}
-
-.cta-contact-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.3;
-  color: #8023aa;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 28px;
-  }
-}
-
-.cta-bottom-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #8023aa;
-
-  @include media(desktop) {
-    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
