@@ -4,21 +4,16 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 213px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 94px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
-    padding-top: 185px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 60px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
@@ -29,85 +24,61 @@
 
 .hero-content-wrapper {
   @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+    max-width: 735px;
   }
 }
 
 .hero-main-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 64px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
   line-height: 1.2;
-  text-align: center;
-  color: #8023aa;
-  margin-bottom: 8px;
+  color: #0f227b;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 96px;
-    margin-bottom: 0;
+    font-size: 72px;
+    margin-bottom: 16px;
   }
 }
 
 .hero-subtitle {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  color: #8023aa;
-  margin-bottom: 40px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #0f227b;
+  margin-bottom: 48px;
 
   @include media(desktop) {
-    font-size: 48px;
+    font-size: 28px;
     margin-bottom: 32px;
   }
 }
 
-.hero-top-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.3;
-  text-align: center;
-  color: #8023aa;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    font-size: 28px;
-  }
-}
-
-.hero-middle-text {
-  font-family: 'Outfit', sans-serif;
+.hero-text {
+  font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #8023aa;
-  margin-bottom: 32px;
+  color: #0f227b;
+  margin-bottom: 48px;
 
   @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.hero-bottom-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.3;
-  text-align: center;
-  color: #8023aa;
-  margin-bottom: 30px;
-
-  @include media(desktop) {
-    font-size: 28px;
-    margin-bottom: 24px;
+    font-size: 18px;
+    max-width: 640px;
   }
 }
 
 .hero-btn {
-  box-shadow: 1px 2px 2px 0 rgba(15, 15, 15, 0.5);
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,5 +88,16 @@
 
   @include media(desktop) {
     margin: 0;
+  }
+}
+
+.hero-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    box-shadow: 0 0 12px 0 #1e58ae;
+    border-radius: 8px;
+    min-width: 352px;
   }
 }
